@@ -1,7 +1,6 @@
 /*
  * 
- * Dictionary Utilities class for building and 
- * searching common prefix words in the dictionary
+ * Dictionary Utilities class for searching common prefix words in the dictionary
  */
 
 package com.autocomplete.standalone.trie.utils;
