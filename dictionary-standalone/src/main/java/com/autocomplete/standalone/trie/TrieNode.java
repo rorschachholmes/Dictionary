@@ -24,7 +24,7 @@ public class TrieNode<T> {
 
 	private List<TrieNode<T>> children;
 
-	boolean isLeaf;
+	private boolean isLeaf;
 
 	private TrieNode (T contentVal) {
 
