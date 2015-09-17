@@ -1,17 +1,12 @@
-/*
- * 
- * Realizing a Trie Data Structure to represent and build the dictionary
- */
-
 package com.autocomplete.web.trie;
 
 import java.util.LinkedList;
 import java.util.List;
 
-/*
- * Forcing the TrieNode to have a private constructor and no scope of setting
- * values to defeat instantiation and modification of the dictionary.
- * This is to achieve the truly Singleton Nature of the PreloadedDictionary class
+/**
+ * Realizing a Trie Data Structure to represent and build the dictionary
+ * This TrieNode class would represent the entire data in the dictionary
+ * @author Shubham
  * 
  */
 public class TrieNode<T> {
