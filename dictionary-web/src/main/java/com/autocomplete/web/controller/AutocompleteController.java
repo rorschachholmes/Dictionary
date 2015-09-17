@@ -33,7 +33,7 @@ public class AutocompleteController {
 	@RequestMapping(method=RequestMethod.GET, value="/")
 	public String getHomePage(){
 
-		return "searchword";
+		return "searchWord";
 	}
 
 	public static final String ERROR_MESSAGE = "Oops, error occurred !";
