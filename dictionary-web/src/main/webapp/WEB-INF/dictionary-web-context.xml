@@ -11,15 +11,6 @@
 		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
 
-
-    <context:annotation-config />
-
-	<mvc:annotation-driven />
-
-	<bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping" />
-
-	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
-	
 	<bean id="preloadedDictionary" class="com.autocomplete.web.trie.singleton.PreloadedDictionary" lazy-init="false"/>
 	
 	<bean id="autocompleteService" class="com.autocomplete.web.service.impl.AutocompleteServiceImpl" />
