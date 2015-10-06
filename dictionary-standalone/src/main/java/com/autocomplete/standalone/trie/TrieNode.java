@@ -7,6 +7,7 @@ package com.autocomplete.standalone.trie;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
@@ -17,8 +18,12 @@ import java.util.Scanner;
  * This is to achieve the truly Singleton Nature of the PreloadedDictionary class
  * 
  */
-public class TrieNode<T> {
+public class TrieNode<T> implements Cloneable,Serializable{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7327552293861944013L;
 	private static TrieNode<Character> root = new TrieNode<Character>('*');
 	private T contentVal;
 
