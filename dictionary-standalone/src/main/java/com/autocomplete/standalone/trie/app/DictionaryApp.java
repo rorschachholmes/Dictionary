@@ -1,10 +1,4 @@
 
-/*
- * Main Interfacing class to test the autocomplete functionality
- * This can be done using a web-app but for simplicity
- * it is demonstrated using the main function 
- * 
- */
 
 package com.autocomplete.standalone.trie.app;
 
@@ -16,6 +10,17 @@ import java.io.InputStreamReader;
 import com.autocomplete.standalone.trie.TrieNode;
 import com.autocomplete.standalone.trie.singleton.PreloadedDictionary;
 import com.autocomplete.standalone.trie.utils.TrieDictionaryUtils;
+
+
+/**
+ * Main Interfacing class to test the autocomplete functionality
+ * 
+ * This can be done using a web-app but for simplicity
+ * it is demonstrated using the main function 
+ * 
+ * @author Shubham
+ * 
+ */
 
 public class DictionaryApp {
 

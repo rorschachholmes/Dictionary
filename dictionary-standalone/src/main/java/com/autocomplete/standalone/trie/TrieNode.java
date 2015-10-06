@@ -1,7 +1,4 @@
-/*
- * 
- * Realizing a Trie Data Structure to represent and build the dictionary
- */
+
 
 package com.autocomplete.standalone.trie;
 
@@ -12,11 +9,17 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
-/*
+/**
+ * 
+ * Realizing a Trie Data Structure to represent and build the dictionary
+ * This TrieNode class would represent the entire data in the dictionary
+ * 
  * Forcing the TrieNode to have a private constructor and no scope of setting
  * values to defeat instantiation and modification of the dictionary.
  * This is to achieve the truly Singleton Nature of the PreloadedDictionary class
  * 
+ * 
+ * @author Shubham
  */
 public class TrieNode<T> implements Cloneable,Serializable{
 
@@ -79,10 +82,15 @@ public class TrieNode<T> implements Cloneable,Serializable{
 		this.isLeaf = isLeaf;
 	}
 
-	/*
+	/**
 	 * Final method to build the preloaded dictionary
 	 * If there is a database, we can read each record and insert it into
 	 * the Trie data structure to build the dictionary
+	 * 
+	 * @param dictionary
+	 * @param file
+	 * 
+	 * 
 	 */
 	public static final TrieNode<Character> getPreloadedDictionary(TrieNode<Character> dictionary, File file){
 

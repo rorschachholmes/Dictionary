@@ -1,12 +1,15 @@
-/*
- * 
- * Dictionary Utilities class for searching common prefix words in the dictionary
- */
+
 
 package com.autocomplete.standalone.trie.utils;
 
 import com.autocomplete.standalone.trie.TrieNode;
 
+
+/**
+ * Dictionary Utilities class for searching common prefix words in the dictionary
+ * 
+ * @author Shubham
+ */
 public class TrieDictionaryUtils {
 
 	private int countOfMatchedWords = 0;

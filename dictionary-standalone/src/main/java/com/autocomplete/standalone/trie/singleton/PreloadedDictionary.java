@@ -1,14 +1,18 @@
-/*
- * 
- * Singleton Pattern to preload the dictionary for caching
- * 
- */
+
 
 package com.autocomplete.standalone.trie.singleton;
 import java.io.File;
 
 import com.autocomplete.standalone.trie.TrieNode;
 
+
+/**
+ * 
+ * A Singleton Pattern to preload the dictionary for caching
+ * 
+ * @author Shubham
+ * 
+ */
 public class PreloadedDictionary implements Cloneable{
 	
 	private static TrieNode<Character> dictionary = null;
