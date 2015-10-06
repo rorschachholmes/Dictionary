@@ -1,8 +1,4 @@
-/*
- * 
- * Singleton Pattern to preload the dictionary for caching
- * 
- */
+
 
 package com.autocomplete.web.trie.singleton;
 import java.io.File;
@@ -12,6 +8,13 @@ import java.util.Scanner;
 
 import com.autocomplete.web.trie.TrieNode;
 
+/**
+ * 
+ * A Singleton Pattern to preload the dictionary for caching
+ * 
+ * @author Shubham
+ * 
+ */
 public class PreloadedDictionary implements Cloneable{
 	
 	private static TrieNode<Character> dictionary = null;
@@ -35,10 +38,13 @@ public class PreloadedDictionary implements Cloneable{
 	}
 
 	
-	/*
+	/**
 	 * Method to build the preloaded dictionary
 	 * If there is a database, we can read each record and insert it into
 	 * the Trie data structure to build the dictionary
+	 * 
+	 * @param dictionary
+	 * @return the preloaded dictionary
 	 */
 	private static TrieNode<Character> buildPreloadedDictionary(TrieNode<Character> dictionary){
 

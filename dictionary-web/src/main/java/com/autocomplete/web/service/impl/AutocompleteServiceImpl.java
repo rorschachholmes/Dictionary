@@ -27,9 +27,12 @@ public class AutocompleteServiceImpl implements AutocompleteService {
 	}
 
 
-	/*
+	/**
 	 * 
 	 * Method to return all prefix-matching word suggestions
+	 * 
+	 * @param word
+	 * @return {@link List} list of suggestions
 	 * 
 	 */
 	@Override
@@ -81,9 +84,13 @@ public class AutocompleteServiceImpl implements AutocompleteService {
 	}
 
 
-	/*
+	/**
 	 * Recursive Helper method to find all matching words containing a common prefix
 	 * and saving them
+	 * 
+	 * @param node
+	 * @param word
+	 * 
 	 */
 	private void findAllWordsWithPrefix(TrieNode<Character> node, String word){
 
