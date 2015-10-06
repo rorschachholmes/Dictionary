@@ -1,5 +1,6 @@
 package com.autocomplete.web.trie;
 
+import java.io.Serializable;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -9,7 +10,12 @@ import java.util.List;
  * @author Shubham
  * 
  */
-public class TrieNode<T> {
+public class TrieNode<T> implements Cloneable,Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -6621562336961788408L;
 
 	private T contentVal;
 
